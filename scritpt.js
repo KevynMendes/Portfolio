@@ -1,10 +1,20 @@
-var scrollTimeout;
+    var imagens = [
+      "midia/img1.png",
+      "midia/img2.png",
+      "midia/img3.png",
+      "midia/img4.png",
+      "midia/img5.png",
+      "midia/img6.png",
+      "midia/img7.png",
+      "midia/img8.png",
+      "midia/img9.png",
+      "assets/profile-picture.png",
+    ];
 
-window.addEventListener('scroll', function() {
-    clearTimeout(scrollTimeout);
-    
-    // Defina um tempo limite para carregar recursos ou executar scripts após o usuário parar de rolar
-    scrollTimeout = setTimeout(function() {
-        // Aqui você pode carregar recursos ou executar scripts que precisam ser atrasados
-    }, 250); // Ajuste este valor conforme necessário
-});
+    function preCarregarImagens() {
+      for (var i = 0; i < imagens.length; i++) {
+        var img = new Image();
+        img.src = imagens[i];
+      }
+    }
+    window.addEventListener('load', preCarregarImagens);
