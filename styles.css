@@ -361,88 +361,179 @@ html {
   background-color: #7e7d7d;
 }
 
-/* Cor do indicador da posição atual da rolagem */
 ::-webkit-scrollbar-thumb {
   background-color: #39ff14;
 }
 
   /*Media Queries*/
 
-  @media only screen and (max-width: 768px) {
-    section {
-      padding: 8rem 5%;
-    }
-  
-    .header {
-      padding: 1.5rem 5%;
-    }
-  
-    .navbar a {
-      margin-left: 2rem;
-      font-size: 2rem;
-      padding: 1.5rem;
-    }
-  
-    .habilidades {
-      padding: 8rem 5%;
-    }
-  
-    .sobre {
-      flex-direction: column;
-      gap: 2rem;
-      padding: 5rem 2rem;
-    }
-  
-    .sobre-img img,
-    .sobre-mim img {
-      width: 70%;
-      margin: 1rem 0;
-    }
-  
-    .sobre-container-page {
-      padding: 5rem 2rem;
-    }
-  
-    .portfolio {
-      padding: 8rem 5%;
-    }
+@media only screen and (max-width: 767px) {
+  .header {
+    padding: 1rem 2%;
   }
-  
-  @media only screen and (max-width: 600px) {
-    section {
-      padding: 6rem 3%;
-    }
-  
-    .header {
-      padding: 1rem 3%;
-    }
-  
-    .navbar a {
-      margin-left: 1.5rem;
-      font-size: 1.8rem;
-      padding: 1.2rem;
-    }
-  
-    .habilidades {
-      padding: 6rem 3%;
-    }
-  
-    .sobre {
-      padding: 4rem 1.5rem;
-    }
-  
-    .sobre-img img,
-    .sobre-mim img {
-      width: 80%;
-      margin: 1rem 0;
-    }
-  
-    .sobre-container-page {
-      padding: 4rem 1.5rem;
-    }
-  
-    .portfolio {
-      padding: 6rem 3%;
-    }
+
+  h1 {
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin-left: 1re;
   }
-  
+
+  .navbar a {
+    position: relative;
+    bottom: 0rem;
+    left: 2rem;
+    font-size: 1.5rem;
+    padding: 0rem;
+  }
+
+  .navbar a:hover {
+    font-size: 1.5rem;
+    color: #000;
+    margin-left: 1rem;
+    background: #39ff14;
+    box-shadow: 0 0 1rem #111111;
+    padding: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .curriculo {
+    top: 0.3rem;
+    right: 0.3rem;
+  }
+
+  .curriculo img {
+    width: 3rem;
+  }
+
+  .habilidades {
+    padding: 2rem 1rem;
+  }
+
+  .habilidades h2 {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+
+  .habilidades-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .habilidades-box img {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .habilidades-box h3 {
+    font-size: 1.8rem;
+  }
+
+  .habilidades-box p {
+    font-size: 0.6rem;
+    text-align: left;
+  }
+
+  .portfolio {
+    padding: 5rem 1rem;
+  }
+
+  .portfolio h2 {
+    font-size: 2.9rem;
+    margin-bottom: 3rem;
+  }
+
+  .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    grid: 2rem;
+    gap: 1rem;
+  }
+
+  .portfolio-box img {
+    height: 25rem;
+  }
+
+  .portfolio-layer h3 {
+    font-size: 2rem;
+  }
+
+  .portfolio-layer p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .portfolio-layer a {
+    font-size: 1.5rem;
+    width: 15rem;
+    height: 4rem;
+  }
+
+  .portfolio-layer a i {
+    font-size: 3rem;
+  }
+
+  .sobre {
+    flex-direction: column;
+    padding: 3rem 1rem;
+  }
+
+  .sobre-img img {
+    width: 70vw;
+  }
+
+  .sobre-img :hover {
+    width: 70vw;
+  }
+
+  .sobre-container-page {
+    padding: 6rem 1rem;
+  }
+
+  .heading {
+    font-size: 3.5rem;
+  }
+
+  .sobre-container h2 {
+    font-size: 2.9rem;
+  }
+
+  .sobre-container h3 {
+    font-size: 1.8rem;
+
+  }
+
+  .sobre-container h4 {
+    font-size: 1.2rem;
+  }
+
+  .sobre-container p {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 2.5rem;
+  }
+
+  .sobre-container strong {
+    font-size: 1.7rem;
+  }
+
+  .footer {
+    padding: 1rem 5%;
+  }
+
+  .footer h2 {
+    font-size: 2.5rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+
+  .redes-sociais a img {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}
+
